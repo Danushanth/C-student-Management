@@ -41,7 +41,7 @@ namespace UnicomTICManagementSystem.Views
             {
                 string role = users[username].Role;
 
-                // 🔐 Save role to global session
+                
                 UserSession.Role = role;
                 if (role == "Admin")
                 {
@@ -51,7 +51,7 @@ namespace UnicomTICManagementSystem.Views
                 }
                 else
                 {
-                    // 🔁 Always open Form1
+                    
                     Form1 mainForm = new Form1();
                     mainForm.Show();
                 }

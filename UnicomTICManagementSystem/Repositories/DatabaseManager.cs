@@ -88,6 +88,13 @@ namespace SchoolManageSystem.Data
                         LectureNicNo INTEGER NOT NULL,
                         Subject TEXT NOT NULL
                     );
+                   CREATE TABLE IF NOT EXISTS Exams (
+                        ExamId INTEGER PRIMARY KEY AUTOINCREMENT,
+                        ExamName TEXT NOT NULL,
+                        SubjectName TEXT NOT NULL,
+                        FOREIGN KEY (SubjectId) REFERENCES Subjects(SubjectId)
+                    );;
+
                 ";
 
 

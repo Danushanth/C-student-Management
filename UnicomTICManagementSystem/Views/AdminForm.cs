@@ -122,5 +122,10 @@ namespace UnicomTICManagementSystem.Views
             loginForm.Show();
             this.Hide();
         }
+
+        private void button12_Click(object sender, EventArgs e)
+        {
+            LoadForm(new ExamForm());
+        }
     }
 }
